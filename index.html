@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3-oy</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./js/java.js" />
   </head>
   <body>
     <div class="header">
-      <div class="navbar">
+      <div class="navbar" id="navbar">
         <div class="infin">
           <img src="./images/IMAGE.svg" alt="logo" />
         </div>
+
         <div class="home">
           <a href="#home">Home</a>
           <a href="#about">About</a>
@@ -22,9 +22,13 @@
           <a href="#pages">Pages</a>
         </div>
         <div class="oy">
-          <img src="./images/oy.svg" alt="oy" />
+          <button id="dark-light">
+            <img src="./images/moon.svg" alt="" width="32" height="28" />
+          </button>
           <button><a href="tel:998 93 054 46 03">Contact us</a></button>
         </div>
+        <label for="menu">Menu</label>
+        <input type="checkbox" id="menu" name="checkbox" />
       </div>
       <div class="container">
         <div class="sirt">
@@ -33,7 +37,7 @@
               <img src="./images/olov.svg" alt="olov" />
               <p>FUTURE OF eSPORTS</p>
             </div>
-            <img src="./images/unleash.svg" alt="unleash" />
+            <img src="./images/unleash.svg" alt="unleash" id="un" />
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis,
               <br />
@@ -169,11 +173,11 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           <img src="./images/niwon1.svg" alt="logo" />
           <p>Smooth FPS</p>
         </div>
-        <div class="plus">
+        <div class="plus pl">
           <img src="./images/niwon2.svg" alt="logo" />
           <p>Multiplayer</p>
         </div>
-        <div class="plus">
+        <div class="plus lu">
           <img src="./images/niwon3.svg" alt="logo" />
           <p>Open World</p>
         </div>
@@ -240,7 +244,7 @@ new picture</pre
     </div>
     <div class="futer">
       <div class="container fut">
-        <img src="./images/Frame.svg" alt="" />
+        <img src="./images/Frame.svg" alt="" id="fr" />
         <div class="futr">
           <p>
             Nulla porttitor accumsan tincidunt. Curabitur non nulla sit amet
@@ -263,4 +267,5 @@ lectus. Cras ultricies ligula sed magna dictum porta. Nulla quis lorem ut libero
       </div>
     </div>
   </body>
+  <script src="./js/java.js"></script>
 </html>
